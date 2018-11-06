@@ -1,0 +1,67 @@
+@import '../app.component.scss';
+
+.cart_content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart_content_items {
+  
+  box-shadow: 1px 1px 4px 3px lightgrey;
+  margin: 10px 0;
+  padding: 20px 10px;
+  height: fit-content;
+}
+
+.cart_content_footer button:nth-child(3),
+.cart_content_footer button:nth-child(2) {
+  float: right;
+}
+
+.cart_content_footer button {
+  margin: 10px;
+}
+
+
+.cart_content_footer button {
+  font-size: 13px;
+}
+
+.relative_product_content {
+  display: flex;
+}
+
+.relative_product_item{
+  margin: 10px;
+  border: 1px solid lightgrey;
+}
+
+.relative_product_item{
+  text-align: center;
+}
+
+.cart_content_items table tr td {
+  line-height: 50px;
+}
+
+.cart_content_items table tr td a,
+.cart_content_items table tr td:last-child{
+  color: $color;
+}
+
+.cart_content_items table tr td input{
+  width: 50px;
+  height: 30px;
+  line-height: 1.5px;
+  padding: 5px;
+  border-radius: 7px;
+  border:1px solid lightgrey;
+}
+
+.cart_products{
+  width: 72%;
+}
+
+tr td:last-child{
+  cursor: pointer;
+}

@@ -1,0 +1,57 @@
+@import '../app.component.scss';
+
+.cart_content_summary,.coupon {
+  height: fit-content;
+  box-shadow: 1px 1px 4px 3px lightgrey;
+  margin: 10px;
+}
+
+.cart_content_summary>h3,
+.coupon>h3 {
+  padding: 30px 10px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.cart_content_summary>div {
+  text-align: center;
+}
+
+.summary>div:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}
+
+.summary>div>p {
+  margin: 0;
+  line-height: 50px;
+}
+
+.summary>div>p:first-child {
+  float: left;
+}
+
+.summary>div>p:nth-child(2) {
+  float: right;
+  font-weight: bold;
+}
+
+.summary>div {
+  padding: 0 10px;
+  clear: both;
+}
+
+.summary>div:last-child>p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.summary {
+  clear: both;
+}
+
+.coupon {
+  @include margin(50px 10px 0 10px);
+}
+
+.summary>div:last-child {
+  margin-bottom: 30px;
+}

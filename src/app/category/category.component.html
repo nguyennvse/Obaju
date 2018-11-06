@@ -1,0 +1,77 @@
+<div class="category-content">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb padding0">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="container category-main-content">
+    <app-sidebar></app-sidebar>
+    <div class="right-container">
+      <div class="container right-container-title">
+        <h2>Ladies</h2>
+        <p>In our Ladies department we offer wide selection of the best products we have found and carefully selected
+          worldwide.</p>
+      </div>
+      <div class="container">
+        <ul class="pagination-ul">
+          <li>Showing 12 of 25 products</li>
+          <li>
+            Showing <button type="button" class="btn btn-outline-info btn-sm active">12</button>
+            <button type="button" class="btn btn-outline-info btn-sm">24</button>
+            <button type="button" class="btn btn-outline-info btn-sm">All</button>
+          </li>
+          <li>
+            Sort by
+            <select>
+              <option>Price</option>
+              <option>Name</option>
+              <option>Sale First</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <div class="products">
+        <div *ngFor="let product of productList" class="products_item">
+          <div><img src="../assets/{{product.img}}" height="100%" width="100%" /></div>
+          <p class="products_items_title">{{product.name}}</p>
+          <p>{{product.price}}</p>
+          <div class="products_item_btn">
+            <button type="button" class="btn " routerLink="/detail">View Detail</button>
+            <button type="button" class="btn btn-info default-btn" (click)="addToCart(product)"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              Add to
+              cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="category-footer">
+        <button class="btn btn-info default-btn"><i class="fa fa-arrow-down" aria-hidden="true"></i> Load more</button>
+        <nav>
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+
+<div class="main-content container">
+  <div class="carousel-area">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="../assets/main-slider1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../assets/main-slider2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../assets/main-slider3.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../assets/main-slider4.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="row padding0 no-margin shop-code-area">
+    <div class="col-md">
+      <div class="shop-code-icon">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+      </div>
+      <div class="shop-code">
+        <h5>WE LOVE OUR CUSTOMERS</h5>
+        <p>We are known to provide best possible service ever</p>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="shop-code-icon">
+        <i class="fa fa-money" aria-hidden="true"></i>
+      </div>
+      <div class="shop-code">
+        <h5>BEST PRICES</h5>
+        <p>You can check that the height of the boxes adjust when longer text like this one is used in one of them.</p>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="shop-code-icon">
+        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+      </div>
+      <div class="shop-code">
+        <h5>100% SATISFACTION GUARANTEED</h5>
+        <p>Free returns on everything for 3 months.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hot-deal-area">
+    <div class="hot-deal-title">Hot deal this week</div>
+  </div>
+
+  <div class="hot-deal-item-area">
+    <div class="hot-deal-item" *ngFor="let product of productList">
+      <img src="../assets/{{product.img}}" width="176px" height="234px" alt="hot-deal-item">
+      <p>{{product.name}}</p>
+      <p>{{product.price}}</p>
+      <div class="ribbon new">
+        <div class="theribbon">New</div>
+      </div>
+      <div class="ribbon sale">
+        <div class="theribbon">Sale</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fashion -->
+  <div class="container fashion-area">
+    <div class="fashion-item">
+      <b>Fashion now</b>
+      <p>By John Slim in Fashion and style</p>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+        tortor quam,
+        feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+        ultricies
+        mi vitae est. Mauris placerat eleifend leo.</p>
+      <button class="btn btn-success default-btn">Continue Reading</button>
+    </div>
+    <div class="fashion-item">
+      <b>Fashion now</b>
+      <p>By John Slim in Fashion and style</p>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+        tortor quam,
+        feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+        ultricies
+        mi vitae est. Mauris placerat eleifend leo.</p>
+      <button class="btn btn-success default-btn">Continue Reading</button>
+    </div>
+  </div>
+  <!--end fashion -->
+</div>
+
