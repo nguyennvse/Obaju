@@ -9,7 +9,7 @@
     </nav>
   </header>
   <article class=" container">
-    <div class="cart_content">
+    <div class="cart_content" *ngIf="shoppingCart.length > 0">
       <div class="cart_products">
         <div class="cart_content_items">
           <h3>Shopping carts</h3>
@@ -30,7 +30,7 @@
               <tr *ngFor="let items of shoppingCart">
                 <td><img src="../assets/{{items.img}}" height="50" width="50" /></td>
                 <td><a href="#">{{items.name}}</a></td>
-                <td><input type="number" value="2" /></td>
+                <td><input type="number" value="{{items.quantity}}" (change)="updateQuantity(items,$event)" step="1"/></td>
                 <td>${{items.price}}</td>
                 <td>${{items.discount}}</td>
                 <td>${{items.price - items.discount}}</td>
@@ -80,10 +80,10 @@
       
           </div>
       </div>
-      <app-order-summary></app-order-summary>
+      <app-order-summary ></app-order-summary>
     </div>
-
-
-    
+    <div class="cart_content"  *ngIf="shoppingCart.length === 0">
+        There is no items in your cart
+    </div>
   </article>
 </section>

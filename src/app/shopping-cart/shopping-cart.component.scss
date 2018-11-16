@@ -1,6 +1,7 @@
 @import '../app.component.scss';
 
 .cart_content {
+  min-height: calc(100vh - 48px - 259px - 76px - 50px - 176px);
   display: flex;
   justify-content: space-around;
 }

@@ -18,6 +18,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 // Services
 import { ShoppingcartService } from './services/shoppingcart.service';
 import { EventsService } from './services/events.service';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,11 +35,14 @@ import { EventsService } from './services/events.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     ShoppingcartService,
-    EventsService
+    EventsService,
+    FormBuilder
   ],
   bootstrap: [AppComponent]
 })

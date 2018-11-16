@@ -4,7 +4,7 @@
     <p>Shipping and additional costs are calculated based on the values you have entered.</p>
     <div>
       <p>Order subtotal</p>
-      <p> $446.00</p>
+      <p> {{orderSubtotal}}</p>
     </div>
     <div>
       <p>Shipping and handling</p>
@@ -12,11 +12,11 @@
     </div>
     <div>
       <p>Tax</p>
-      <p>$0.00</p>
+      <p>{{orderSubtotal/10}}</p>
     </div>
     <div>
       <p>Total </p>
-      <p>$456.00</p>
+      <p>{{orderSubtotal + 10 - orderSubtotal/10}}</p>
     </div>
     <div></div>
   </div>
@@ -26,8 +26,7 @@
   <h3>Coupon code</h3>
   <p>If you have a coupon code, please enter it in the box below.</p>
   <div class="input-group">
-    <input type="text" class="form-control" aria-label="Input group example"
-      aria-describedby="btnGroupAddon">
+    <input type="text" class="form-control" aria-label="Input group example" aria-describedby="btnGroupAddon">
     <div class="input-group-prepend ">
       <div class="input-group-text default-btn" id="btnGroupAddon"><i class="fa fa-gift"></i></div>
     </div>
