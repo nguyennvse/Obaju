@@ -1,0 +1,19 @@
+@import '../../app.component.scss';
+.delivery_methods {
+  display: flex;
+  text-align: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+  .delivery_methods_items {
+    width: 30%;
+    padding: 20px 0;
+    margin: 10px;
+    border: 1px solid lightgrey;
+
+    p {
+      border-bottom: 1px solid lightgrey;
+      padding: 0 10px;
+    }
+  }
+}

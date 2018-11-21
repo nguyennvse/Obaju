@@ -33,7 +33,7 @@
                 <td><input type="number" value="{{items.quantity}}" (change)="updateQuantity(items,$event)" step="1"/></td>
                 <td>${{items.price}}</td>
                 <td>${{items.discount}}</td>
-                <td>${{items.price - items.discount}}</td>
+                <td>${{items.price * items.quantity - items.discount}}</td>
                 <td (click)="removeFromCart(items)"><i class="fa fa-trash-o"></i></td>
               </tr>
             

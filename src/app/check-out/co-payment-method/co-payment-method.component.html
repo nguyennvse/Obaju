@@ -1,0 +1,27 @@
+<div class="tab-pane" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+  <div class="payment_methods" [formGroup]="checkOutFormGroup">
+    <div class="payment_methods_item">
+      <input type="radio" name="paymentmethod" value="Amex" formControlName="paymentmethod">
+      <i class="fa fa-ccamex"></i> Amex
+    </div>
+    <div class="payment_methods_item">
+      <input type="radio" name="paymentmethod" value="Paypal" formControlName="paymentmethod">
+      <i class="fa fa-cc-paypal"></i> Paypal
+    </div>
+    <div class="payment_methods_item">
+      <input type="radio" name="paymentmethod" value="DinnersClub" formControlName="paymentmethod">
+      <i class="fa fa-cc-dinners-club"></i> Dinners club
+    </div>
+    <div class="payment_methods_item">
+      <input type="radio" name="paymentmethod" value="GoogleWallet" formControlName="paymentmethod">
+      <i class="fa fa-google-wallet"></i> Google wallet
+    </div>
+    <div class="payment_methods_item">
+      <input type="radio" name="paymentmethod" value="JCB" formControlName="paymentmethod">
+      <i class="fa fa-cc-jcb"></i> JCB
+    </div>
+    <div class="payment_methods_item">
+      <input type="radio" name="paymentmethod" value="MasterCard" formControlName="paymentmethod">
+      <i class="fa fa-cc-mastercard"></i> Master card
+    </div>
+  </div>

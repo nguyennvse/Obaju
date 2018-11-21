@@ -19,6 +19,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ShoppingcartService } from './services/shoppingcart.service';
 import { EventsService } from './services/events.service';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CoAddressComponent } from './check-out/co-address/co-address.component';
+import { CoDeliveryMethodComponent } from './check-out/co-delivery-method/co-delivery-method.component';
+import { CoPaymentMethodComponent } from './check-out/co-payment-method/co-payment-method.component';
+import { CoOrderReviewComponent } from './check-out/co-order-review/co-order-review.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,11 @@ import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
     CheckOutComponent,
     OrderSummaryComponent,
     DetailComponent,
-    SidebarComponent
+    SidebarComponent,
+    CoAddressComponent,
+    CoDeliveryMethodComponent,
+    CoPaymentMethodComponent,
+    CoOrderReviewComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +52,7 @@ import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
     EventsService,
     FormBuilder
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ CoAddressComponent ],
 })
 export class AppModule { }
