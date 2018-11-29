@@ -1,5 +1,5 @@
 <div class="tab-pane" id="address" role="tabpanel" aria-labelledby="address-tab">
-  <form [formGroup]="this.formService.checkOutFormGroup">
+  <form [formGroup]="formService.checkOutFormGroup">
     <div class="form-row">
       <div class="form-group col-md-6">
         <label>First Name</label>
@@ -49,6 +49,6 @@
   </form>
   <div class="address_tab_footer">
     <button type="button" class="btn white-btn left"><i class="fa fa-chevron-left"></i> Back to basket</button>
-    <button type="button" class="btn default-btn right" (click)="test()"> Continue to Delivery Method <i class="fa fa-chevron-right"></i></button>
+    <button type="button" class="btn default-btn right" (click)="changeProgress(Progress.Delivery)"> Continue to Delivery Method <i class="fa fa-chevron-right"></i></button>
   </div>
 </div>

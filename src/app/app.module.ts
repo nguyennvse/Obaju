@@ -23,6 +23,7 @@ import { CoAddressComponent } from './check-out/co-address/co-address.component'
 import { CoDeliveryMethodComponent } from './check-out/co-delivery-method/co-delivery-method.component';
 import { CoPaymentMethodComponent } from './check-out/co-payment-method/co-payment-method.component';
 import { CoOrderReviewComponent } from './check-out/co-order-review/co-order-review.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,7 @@ import { CoOrderReviewComponent } from './check-out/co-order-review/co-order-rev
     CoAddressComponent,
     CoDeliveryMethodComponent,
     CoPaymentMethodComponent,
-    CoOrderReviewComponent
+    CoOrderReviewComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +54,11 @@ import { CoOrderReviewComponent } from './check-out/co-order-review/co-order-rev
     FormBuilder
   ],
   bootstrap: [AppComponent],
-  entryComponents: [ CoAddressComponent ],
+  entryComponents: [
+    CoAddressComponent,
+    CoDeliveryMethodComponent,
+    CoPaymentMethodComponent,
+    CoOrderReviewComponent
+  ],
 })
 export class AppModule { }

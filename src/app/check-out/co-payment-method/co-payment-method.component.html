@@ -1,5 +1,5 @@
 <div class="tab-pane" id="payment" role="tabpanel" aria-labelledby="payment-tab">
-  <div class="payment_methods" [formGroup]="checkOutFormGroup">
+  <div class="payment_methods" [formGroup]="this.formService.checkOutFormGroup">
     <div class="payment_methods_item">
       <input type="radio" name="paymentmethod" value="Amex" formControlName="paymentmethod">
       <i class="fa fa-ccamex"></i> Amex
@@ -25,3 +25,8 @@
       <i class="fa fa-cc-mastercard"></i> Master card
     </div>
   </div>
+  <div class="address_tab_footer">
+    <button type="button" class="btn white-btn left"><i class="fa fa-chevron-left"></i> Back to basket</button>
+    <button type="button" class="btn default-btn right" (click)="changeProgress(Progress.Overview)"> Continue to Check Out Overview <i class="fa fa-chevron-right"></i></button>
+  </div>
+</div>

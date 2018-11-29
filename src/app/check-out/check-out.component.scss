@@ -39,37 +39,5 @@
         }
       }
     }
-
-
-    .tab-pane {
-      padding: 10px 0;
-      height: fit-content;
-      .address_tab_footer{
-        margin-top: 30px;
-      }
-      .delivery_methods{
-        display: flex;
-        text-align: center;
-        flex-flow: row;
-        flex-wrap: wrap;
-        .delivery_methods_items{
-          width: 30%;
-          padding: 20px 0;
-          margin: 10px;
-          border:1px solid lightgrey;
-          p{
-            border-bottom:1px solid lightgrey;
-            padding: 0 10px;
-          }
-        }
-      }
-      .payment_methods_item{
-        padding: 10px;
-        line-height: 20px;
-        margin: 5px;
-        border: 1px solid lightgrey;
-        border-radius: 3px;
-      }
-    }
   }
 }

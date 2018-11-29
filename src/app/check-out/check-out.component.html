@@ -12,21 +12,17 @@
     <div class="ck_info">
       <h1>Check out</h1>
       <ul class="co_tab">
-        <li class="active">
-          <a id="address-tab" data-toggle="tab" href="#address" role="tab" aria-controls="address" aria-selected="true"><i
-              class="fa fa-map-marker"></i><br>Address</a>
+        <li [ngClass] = "activeTab === constProgress.Address ? 'active' : ''">
+          <a id="address-tab"><i class="fa fa-map-marker"></i><br>Address</a>
         </li>
-        <li>
-          <a id="delivery-tab" data-toggle="tab" href="#delivery" role="tab" aria-controls="delivery" aria-selected="false"><i
-              class="fa fa-truck"></i><br>Delivery Method</a>
+        <li [ngClass] = "activeTab === constProgress.Delivery ? 'active' : ''">
+          <a id="delivery-tab"><i class="fa fa-truck"></i><br>Delivery Method</a>
         </li>
-        <li>
-          <a id="payment-tab" data-toggle="tab" href="#payment" role="tab" aria-controls="payment" aria-selected="false"><i
-              class="fa fa-money"></i><br>Payment Method</a>
+        <li [ngClass] = "activeTab === constProgress.Payment ? 'active' : ''">
+          <a id="payment-tab"><i class="fa fa-money"></i><br>Payment Method</a>
         </li>
-        <li>
-          <a id="order-tab" data-toggle="tab" href="#order" role="tab" aria-controls="order" aria-selected="false"><i
-              class="fa fa-eye"></i><br>Order review</a>
+        <li [ngClass] = "activeTab === constProgress.Overview ? 'active' : ''">
+          <a id="order-tab"><i class="fa fa-eye"></i><br>Order review</a>
         </li>
       </ul>
 
@@ -35,7 +31,7 @@
         <!-- <app-co-address></app-co-address> -->
         <!-- <app-co-delivery-method></app-co-delivery-method> -->
         <ng-template #dynamicComponent></ng-template>
-        
+
 
         <div class="tab-pane" id="order" role="tabpanel" aria-labelledby="order-tab">...</div>
       </div>
