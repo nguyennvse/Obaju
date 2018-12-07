@@ -1,6 +1,12 @@
 # EcommerceObaju
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+## Installation
+
+npm i -g @angular/cli
+
+npm i
+
+npm start
 
 ## Development server
 
